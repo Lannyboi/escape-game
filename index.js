@@ -1,6 +1,6 @@
 /* Importing components */
-import Character from "/components/Character.js"
-import Map from "/components/Map.js"
+import Character from "./components/Character.js"
+import Map from "./components/Map.js"
 
 /* Grabbing the canvas */
 const canvas = document.getElementById("canvas")

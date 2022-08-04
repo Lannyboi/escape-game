@@ -1,6 +1,6 @@
 /* Importing components */
-import Character from "/components/Character.js"
-import Map from "/components/Map.js"
+import Character from "./components/Character.js"
+import Map from "./components/Map.js"
 
 /* Grabbing the canvas */
 const canvas = document.getElementById("canvas")
@@ -41,39 +41,6 @@ function draw() {
 }
 
 draw()
-
-/* Adding movement */
-
-/* document.onkeydown = checkKey;
-
-function checkKey(e) {
-
-    const key = e.keyCode
-
-    switch(key) {
-        case 38: 
-        if ((p.ypos - 10) > 0 && ((p.ypos - 40) !== map[0].ypos || (p.xpos) !== map[0].xpos)) {
-            p.ypos = p.ypos - 40
-        } 
-        break
-        case 40: 
-        if ((p.ypos + p.width + 10) < 460 && ((p.ypos + 40) !== 50 || (p.xpos) !== 50)) {
-            p.ypos = p.ypos + 40
-        } 
-        break
-        case 37:
-        if ((p.xpos - 10) > 0 && ((p.xpos - 40) !== 50 || (p.ypos) !== 50)) {
-            p.xpos = p.xpos - 40
-        }
-        break
-        case 39:
-        if ((p.xpos + p.width + 10) < 460 && ((p.xpos + 40) !== 50 || (p.ypos) !== 50)) {
-            p.xpos = p.xpos + 40
-        }
-        break
-    }
-    draw()
-} */
 
 /* For internet explorer */
 document.onkeydown = checkKey;
